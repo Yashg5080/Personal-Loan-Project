@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance calculator</title>
+    <link rel="stylesheet" href="styles/finance_applications.css">
+    <script src="https://kit.fontawesome.com/0be67b061b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Finance Calculator</h2>
+            <h3>Finance Application Form</h3>
+            <p class="required">Required Fields</p>
+            <!-- vehicle-details -->
+            <div class="vehicle-details">
+                <h4>Vehicle Details</h4>
+                <br>
+                <div>
+                    <div><input type="text"> Make</div>
+                    <div><input type="text"> Model</div>
+                    <div><input type="text"> Spec</div>
+                    <div><input type="text" value="2021"> Year</div>
+                </div>
+            </div>
+
+            <!-- Finance details -->
+            <div class="vehicle-details">
+                <h4>Finance Details</h4>
+                <br>
+                <div>
+                    <div>€ <input type="text" value="0"> List Price</div>
+                    <div>€ <input type="text" value="0"> Amount</div>
+                    <div>€ <input type="text" value="0"> Deposit</div>
+                    <div>€ <input type="text" value="0"> Spec</div>
+                </div>
+            </div>
+
+            <!-- Applicant Details -->
+            <div class="vehicle-details applicant-details">
+                <h4>Applicant Details</h4>
+                <br>
+                <div>
+                    <div><input type="text"> <span class="required"> First Name</span></div>
+                    <div><input type="text"> <span class="required"> Last Name</span></div>
+                    <div><input type="text" class="small-inp"> - <input type="text"> <span class="required">Work Phone</span></div>
+                    <div><input type="text" class="small-inp"> - <input type="text"> <span class="required">Home Phone</span></div>
+                    <div><input type="text" class="small-inp"> - <input type="text"> <span class="required">Mobile Phone</span></div>
+                    <div><input type="email"> <span class="required"> Email Address</span></div>
+                    <div><input type="email"> <span class="required"> Confirm Email Address</span></div>
+                    <p class="required">Address</p>
+                    <textarea name="address"></textarea>
+                    <p>Previous Address (If less than 3 years)</p>
+                    <textarea name="address"></textarea>
+                    <div><input type="text"> <span class="required"> Years At Address</span></div>
+                    <div><input type="text"> <span class="required"> Years At Previous Address</span></div>
+
+                    <div style="margin-top: 30px;"><input type="date"> <span class="required"> Date of Birth</span></div>
+                    <div>
+                        <select name="" id="">
+                            <option value="">House owner</option>
+                            <option value="">Tentant</option>
+                            <option value="">Living with parents</option>
+                        </select>
+                        <span class="required"> Living Arrangement</span>
+                    </div>
+                    <div>
+                        <select name="" id="">
+                            <option value="">Single  </option>
+                            <option value="">Married</option>
+                            <option value="">Others</option>
+                        </select>
+                        <span class="required"> Marital Status</span>
+                    </div>
+                    <div>
+                        <select name="" id="">
+                            <option value="">Phone</option>
+                            <option value="">Email</option>
+                        </select>
+                        <span class="required"> Reply By</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Employment Details -->
+            <div class="vehicle-details employment-details">
+                <h4>Employment Details</h4>
+                <br>
+                <div>
+                    <div><input type="text"> <span class="required"> Occupation</span></div>
+                    <div><input type="text"> <span class="required"> Employer Name</span></div>
+                    <p class="required">Employer Address</p>
+                    <textarea name="address"></textarea>
+                    <div><input type="number"> (years) <input type="number"> (months) <span class="required"> Duration of Employment</span></div>
+                    <div> € <input type="number"> <span class="required"> Monthly Income (Net)</span></div>
+                    <div> € <input type="number"> <span class="required"> Monthly Mortgage</span></div>
+                    <div> € <input type="number"> <span class="required"> Monthly Income (Net)</span></div>
+                    <div><input type="text"> <span class="required"> Bank</span></div>
+                    <div><input type="text"> <span class="required"> Branch</span></div>
+                    <div class="three-details"><input type="text"> <span class="required"> Account Number</span> <input type="text"> <span class="required"> Sort Code</span> <input type="text"> <span class="required"> Time With Bank(years)</span></div>
+                </div>
+
+            </div>
+
+            <!-- Additional Details -->
+            <div class="additional-information">
+                <h4>Additional Information</h4>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <br>
+                <select name="" id="">
+                    <option value="">Select an option</option>
+                    <option value="">Yes</option>
+                    <option value="">No</option>
+                </select>
+                <span class="required"> Do you consent to having your information credit checked</span>
+            </div>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Finance Application">
+
+            <!-- below loan type part -->
+            <div class="loan">
+                <label for="loan-type"><strong>Loan Type: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></label>
+                <select name="" id="">
+                <option value="">Select loan Type</option>
+                <option value="">Motor Loan(7.9%) </option>
+                <option value="">Standard Loan(9%)</option>
+                <option value="">College Loan(7%)</option>
+                <option value="">Green Loan(7.9%)</option>
+                <option value="">Secured Loan(5.5%)</option>
+                <option value="">Savers Loan(5.5%)</option>
+            </select>
+            </div>
+            <div class="loan">
+                <label for="amount">Amount of Loan:</label>
+                <div>
+                    €<input type="text" id="amount">
+                </div>
+
+            </div>
+            <div class="loan">
+                <label for="calc">Repayment Period in Years:	</label>
+                <div>
+                    <select name="" id="calc">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                    </select>
+                    <button>Calculate</button>
+                </div>
+
+            </div>
+            <div class="loan">
+                <label for="weekly-payment">Weekly Payment:	</label>
+                <div>
+                    €<input type="text" id="weekly-payment">
+                </div>
+
+            </div>
+            <div class="loan">
+                <label for="Fortnightly_Payment">Fortnightly Payment:</label>
+                <div>
+                    €<input type="text" id="Fortnightly_Payment">
+                </div>
+
+            </div>
+            <div class="loan">
+                <label for="Monthly_Payment">Monthly Payment:</label>
+                <div>
+                    €<input type="text" id="Monthly_Payment">
+                </div>
+
+            </div>
+
+            <div class="loan">
+                <label for="Total-Repayment-Amount">Total Repayment Amount</label>
+                <div>
+                    €<input type="text" id="Total-Repayment-Amount">
+                </div>
+
+            </div>
+            <div class="loan">
+                <label for="Total-Interest-Payable">Total Interest Payable:	</label>
+                <div>
+                    €<input type="text" id="Total-Interest-Payable">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- Search Button -->
+        <div class="search-btn">
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+
+</html>

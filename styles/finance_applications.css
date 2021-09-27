@@ -1,0 +1,140 @@
+body {
+    font-family: Arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    color: white;
+    background-color: gray;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: black;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    opacity: 0.7;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box {
+    box-shadow: 1px 1px 1px 1px grey;
+    padding: 20px;
+    width: 60vw;
+    line-height: 40px;
+}
+
+.required::before {
+    content: "* ";
+    color: red;
+}
+
+.vehicle-details>div {
+    margin-top: -50px;
+}
+
+.vehicle-details>div {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+
+.vehicle-details>div>div>input {
+    height: 30px;
+}
+
+.small-inp {
+    width: 60px;
+}
+
+textarea {
+    width: 50%;
+    height: 100px;
+}
+
+select {
+    height: 40px;
+    width: 145px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+.finance_application {
+    text-decoration: none;
+    border: 2px solid rgb(185, 182, 182);
+    color: rgb(41, 38, 38);
+    background-color: rgba(179, 174, 174, 0.164);
+    font-size: 13px;
+    padding: 2px;
+}
+
+.three-details {
+    line-height: 1.2;
+}
+
+.loan {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.search-btn {
+    margin-top: -2450px;
+}
+
+@media screen and (max-width:1000px) {
+    .box,
+    .loan {
+        width: 80%;
+    }
+    .search-btn {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .box,
+    .loan {
+        width: 100%;
+    }
+    .employment-details>div>div,
+    .applicant-details>div>div {
+        line-height: 1.1;
+    }
+}

@@ -1,0 +1,142 @@
+body {
+    font-family: Arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    color: white;
+    background-color: gray;
+}
+
+.search-btn {
+    margin-top: -1000px;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: black;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    opacity: 0.7;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box {
+    box-shadow: 1px 1px 1px 1px grey;
+    padding: 10px;
+    width: 50vw;
+}
+
+.box>form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.elements {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+#finance-rate {
+    width: 155px;
+}
+
+.monthly-payments {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 69%;
+}
+
+.radio-inp {
+    width: 50%;
+}
+
+.checkbox {
+    display: flex;
+}
+
+button {
+    cursor: pointer;
+}
+
+.loan {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1350px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .search-btn {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .box,
+    .loan,
+    .elements {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .box,
+    .loan,
+    .elements {
+        width: 100%;
+    }
+}
+
+.finance_application {
+    text-decoration: none;
+    border: 2px solid rgb(185, 182, 182);
+    color: rgb(41, 38, 38);
+    background-color: rgba(179, 174, 174, 0.164);
+    font-size: 13px;
+    padding: 2px;
+}

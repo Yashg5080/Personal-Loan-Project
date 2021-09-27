@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance calculator</title>
+    <link rel="stylesheet" href="styles/finance_calcuator.css">
+    <script src="https://kit.fontawesome.com/0be67b061b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Finance Calculator</h2>
+            <form action="">
+
+                <!-- Input elements -->
+                <div class="elements">
+                    <label for="price">Price of Car</label>
+                    <input type="text" name="" id="price" value="0">
+                </div>
+                <div class="elements finance">
+                    <label for="finance-rate">Finance Rate</label>
+                    <div>
+                        <input type="text" name="" id="finance-rate" value="11">%
+                    </div>
+                </div>
+                <div class="elements">
+                    <label for="less_deposit">Less Deposit</label>
+                    <input type="text" name="" id="less_deposit" value="0">
+                </div>
+                <div class="elements">
+                    <label for="less_trade">Less Trade In Allowance	</label>
+                    <input type="text" name="" id="less_trade" value="0">
+                </div>
+                <div class="elements monthly-payments">
+                    <label for="price">Monthly payment</label>
+                    <div>
+                        <input type="text" name="" id="price" value="+" disabled>payment protection, presuming a typical APR of 11%
+                    </div>
+                </div>
+
+
+
+                <!-- Radio buttons -->
+                <div class="radio-buttons">
+                    <div>
+                        <input type="radio" id="12-months" name="months" value="0">
+                        <label for="12-months">12-months</label>
+                    </div>
+                    <div>
+                        € <input type="text" class="radio-inp" value="0" disabled>/month
+                    </div>
+                </div>
+                <div class="radio-buttons">
+                    <div>
+                        <input type="radio" id="24-months" name="months" value="">
+                        <label for="24-months">24-months</label>
+                    </div>
+                    <div>
+                        € <input type="text" class="radio-inp" value="0" disabled>/month
+                    </div>
+                </div>
+                <div class="radio-buttons">
+                    <div>
+                        <input type="radio" id="36-months" name="months" value="0">
+                        <label for="36-months">36-months</label>
+                    </div>
+                    <div>
+                        € <input type="text" class="radio-inp" value="0" disabled>/month
+                    </div>
+                </div>
+                <div class="radio-buttons">
+                    <div>
+                        <input type="radio" id="48-months" name="months" value="0">
+                        <label for="48-months">48-months</label>
+                    </div>
+                    <div>
+                        € <input type="text" class="radio-inp" value="0" disabled>/month
+                    </div>
+                </div>
+                <div class="radio-buttons">
+                    <div>
+                        <input type="radio" id="60-months" name="months" value="0" checked>
+                        <label for="60-months">60-months</label>
+                    </div>
+                    <div>
+                        € <input type="text" class="radio-inp" value="0" disabled>/month
+                    </div>
+                </div>
+
+                <!-- Total Cost of Credit -->
+                <div class="elements monthly-payments">
+                    <label for="price">Total cost of the credit: € </label>
+                    <div>
+                        <input type="text" name="" id="price" value="0" disabled>
+                    </div>
+                </div>
+
+                <!-- Check box -->
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="check" checked>
+                    <label for="check">Check/uncheck this box to view figures with/without Payment Protection</label>
+                </div>
+
+                <!-- buttons -->
+                <div class="buttons">
+                    <button>Calculate</button>
+                    <a href="finance_applications.html" class="finance_application">Make Finance Application</a>
+                </div>
+                <br><br><br><br><br>
+
+                <!-- below loan type part -->
+                <div class="loan">
+                    <label for="loan-type"><strong>Loan Type: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></label>
+                    <select name="" id="">
+                    <option value="">Select loan Type</option>
+                    <option value="">Motor Loan(7.9%) </option>
+                    <option value="">Standard Loan(9%)</option>
+                    <option value="">College Loan(7%)</option>
+                    <option value="">Green Loan(7.9%)</option>
+                    <option value="">Secured Loan(5.5%)</option>
+                    <option value="">Savers Loan(5.5%)</option>
+                </select>
+                </div>
+                <div class="loan">
+                    <label for="amount">Amount of Loan:</label>
+                    <div>
+                        €<input type="text" id="amount">
+                    </div>
+
+                </div>
+                <div class="loan">
+                    <label for="calc">Repayment Period in Years:	</label>
+                    <div>
+                        <select name="" id="calc">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                        </select>
+                        <button>Calculate</button>
+                    </div>
+
+                </div>
+                <div class="loan">
+                    <label for="weekly-payment">Weekly Payment:	</label>
+                    <div>
+                        €<input type="text" id="weekly-payment">
+                    </div>
+
+                </div>
+                <div class="loan">
+                    <label for="Fortnightly_Payment">Fortnightly Payment:</label>
+                    <div>
+                        €<input type="text" id="Fortnightly_Payment">
+                    </div>
+
+                </div>
+                <div class="loan">
+                    <label for="Monthly_Payment">Monthly Payment:</label>
+                    <div>
+                        €<input type="text" id="Monthly_Payment">
+                    </div>
+
+                </div>
+
+                <div class="loan">
+                    <label for="Total-Repayment-Amount">Total Repayment Amount</label>
+                    <div>
+                        €<input type="text" id="Total-Repayment-Amount">
+                    </div>
+
+                </div>
+                <div class="loan">
+                    <label for="Total-Interest-Payable">Total Interest Payable:	</label>
+                    <div>
+                        €<input type="text" id="Total-Interest-Payable">
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+        <!-- Search Button -->
+        <div class="search-btn">
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+
+</html>

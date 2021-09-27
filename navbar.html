@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <script src="https://kit.fontawesome.com/0be67b061b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        <div class="left">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <button class="btn small-btn"><i class="fas fa-sign-in-alt"></i> &nbsp;</button>
+
+        <div class="right">
+            <ul>
+                <li><a href=""> Home </a></li>
+                <li>
+                    <a href="" class="dropdown" onmouseover="show()" onmouseout="hide()">
+                        Loans
+                        <div class="dropdown-content" id="dropdown-content1">
+                            <p><a href=""> Home Loan</a></p>
+                    <p><a href=""> Personel Loan</a></p>
+                    <p><a href=""> Car Loan</a></p>
+                    <p><a href=""> Used Car Loan</a></p>
+                    <p><a href=""> Finance Tools</a></p>
+                    <p><a href=""> Credit Cards</a></p>
+        </div>
+        </a>
+        </li>
+        <li>
+            <a href="" class="dropdown" onmouseover="show1()" onmouseout="hide1()">
+                        Calculator
+                        <div class="dropdown-content" id="dropdown-content2">
+                            <p><a href=""> Credit Score</a></p>
+            <p><a href=""> EMI Calculator</a></p>
+            <p><a href=""> Finance Calculator</a></p>
+    </div>
+    </a>
+    </li>
+    <li>
+        <a href="" class="dropdown" onmouseover="show2()" onmouseout="hide2()">
+                        Cards
+                        <div class="dropdown-content" id="dropdown-content3">
+                            <p><a href=""> Credit Card</a></p>
+        </div>
+        </a>
+    </li>
+    <li><a href=""> Privacy Policy</a></li>
+
+    </ul>
+    </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <hr>
+        <a href="#" onclick="openNav1()">Loans <span class="sign">></span></a>
+        <hr>
+        <a href="#" onclick="openNav2()">Calculator <span class="sign">></span></a>
+        <hr>
+        <a href="#" onclick="openNav3()">Cards <span class="sign">></span></a>
+        <hr>
+        <a href="#">Privacy Policy</a>
+        <hr>
+    </div>
+    <div id="loan" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+        <a href="#">Home Loan</a>
+        <hr>
+        <a href="#">Personal Loan </a>
+        <hr>
+        <a href="#">Car Loan</a>
+        <hr>
+        <a href="#">Used Car Loan</a>
+        <hr>
+        <a href="#">Finance Tools</a>
+        <hr>
+        <a href="#">Credit Card</a>
+        <hr>
+    </div>
+    <div id="calculator" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+        <a href="#">Credit Score</a>
+        <hr>
+        <a href="#">EMI Calculator </a>
+        <hr>
+        <a href="#">Finance Calculator</a>
+        <hr>
+    </div>
+    <div id="card" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+        <a href="#">Credit Score</a>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+    <script src="script/navbar.js"></script>
+</body>
+
+</html>
