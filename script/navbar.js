@@ -15,6 +15,14 @@ function hide() {
   };
 }
 
+function allhide() {
+  ele = document.getElementById("dropdown-content1");
+  ele1 = document.getElementById("dropdown-content2");
+  ele.style.display = "none";
+  ele1.style.display = "none";
+
+}
+
 function show1() {
   ele1 = document.getElementById("dropdown-content1");
   if (ele1.style.display === "flex") ele1.style.display = "none";
